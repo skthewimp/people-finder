@@ -1,4 +1,4 @@
-# Stalker — Mac Research App
+# People Finder — Mac Research App
 
 Describe someone you met. Claude searches the web and finds them.
 
@@ -62,4 +62,4 @@ Haiku is the default — good enough for most lookups. Switch to Sonnet for hard
 
 ## Related
 
-- `../stalker/` — iOS version (SwiftUI + SwiftData, voice input via SFSpeechRecognizer)
+- `../people-finder-ios/` — iOS version (SwiftUI + SwiftData, voice input via SFSpeechRecognizer)

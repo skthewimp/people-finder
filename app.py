@@ -1,5 +1,5 @@
 """
-Stalker — Mac research app
+People Finder — Mac research app
 Describe someone you met. Claude searches the web and finds them.
 
 Run with:  streamlit run app.py
@@ -45,7 +45,7 @@ professional and public-facing information.\
 
 # ── Page setup ────────────────────────────────────────────────────────────────
 
-st.set_page_config(page_title="Stalker", page_icon="🔍", layout="wide")
+st.set_page_config(page_title="People Finder", page_icon="🔍", layout="wide")
 
 st.markdown("""
 <style>
@@ -335,7 +335,7 @@ with st.sidebar:
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
-st.title("🔍 Stalker")
+st.title("🔍 People Finder")
 st.caption("Describe someone you met. Claude searches the web and finds them.")
 
 narrative = st.text_area(

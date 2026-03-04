@@ -1,4 +1,4 @@
-# Development Log — Stalker Mac
+# Development Log — People Finder
 
 ---
 
@@ -6,7 +6,7 @@
 
 ### User prompts this session
 
-> "I want to create an iOS app called Stalker... meet people... gather information through web search... LinkedIn, Twitter, Facebook... comprehensive report..."
+> "I want to create an iOS app called People Finder... meet people... gather information through web search... LinkedIn, Twitter, Facebook... comprehensive report..."
 
 > "A few other things to consider: I want the input to be voice. Now I have the Wispr Flow app... The input is going to be a story, kind of an essay... 'Today at this event, I made this sort of old guy named [name]...'"
 

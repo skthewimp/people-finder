@@ -4,7 +4,7 @@ Last weekend I was at a party - the kind where you end up in half a dozen intere
 
 The obvious thing - the thing I'd done for years - is to open LinkedIn, type in what I remember, and hope for the best. Which works, sometimes. But it's slow and fiddly, and if you only caught the first name, or you're not sure if they said Bangalore or Bombay, you're already stuck.
 
-So I built something to fix this. I'm calling it Stalker (yes, I know - but it's a personal tool, and I'm not submitting it to the App Store anytime soon).
+So I built something to fix this. I'm calling it People Finder.
 
 The basic idea is simple. You open the app and describe the person the way you'd describe them to a friend - "older guy, soft-spoken, seemed very senior, said he was doing something in energy or infrastructure" or "woman in her 40s, sharp, works in strategy, mentioned Bangalore". Just talk. No dropdowns, no required fields. The app takes that natural language description, sends it to [Claude](https://anthropic.com) with web search enabled, and Claude does what you'd do if you Googled for an hour: finds their LinkedIn, their company page, their conference talks, their published articles, whatever they've chosen to make public.
 
@@ -18,6 +18,6 @@ The other thing that went wrong: the app appeared to go into an infinite loop on
 
 Every search gets logged locally - the description I typed, what it found, which social links it surfaced, how confident it was. There's a feedback widget at the bottom: was this the right person? Yes / Partially / No. The idea is to build up enough rated examples that I can improve the search prompts over time. The log stays on my machine and never goes to GitHub - it has descriptions of real people, and that's not the kind of thing that should be floating around publicly.
 
-The code is [on GitHub](https://github.com/skthewimp/stalker-mac) if you want to use it or adapt it. You'll need an Anthropic API key - each search costs somewhere between $0.13 and $0.50 depending on which model you use. For most lookups the faster, cheaper option is fine. The slower one is there for harder cases where someone has a common name or minimal web presence.
+The code is [on GitHub](https://github.com/skthewimp/people-finder) if you want to use it or adapt it. You'll need an Anthropic API key - each search costs somewhere between $0.13 and $0.50 depending on which model you use. For most lookups the faster, cheaper option is fine. The slower one is there for harder cases where someone has a common name or minimal web presence.
 
 There's an iOS version half-built too, with voice input using Apple's speech recogniser. That's for another post.
